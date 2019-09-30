@@ -371,8 +371,19 @@ var message = String()
 
 if population > 10000 {
  message = "\(population) is a large town"
+ else if population > 5000
+ message = "\(population) a medium size town"
 }
 ```
+var population: Int = 10000
+var message = String()
+
+if population > 10000 {
+ message = "\(population) is a large town"
+}
+else if population > 5000 {
+ message = "\(population) a medium size town"
+}
 ***
 
 ## Question 15
