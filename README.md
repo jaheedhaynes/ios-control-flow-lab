@@ -161,7 +161,20 @@ if temperatureInFahrenheit <= 40 {
 //Re-written statement here
 
 ```
+/*
+var temperatureInFahrenheit = 40
 
+switch temperatureInFahrenheit  {
+    
+case  <= 40 :
+    print("It's cold out")
+case >= 85 :
+    print("It's really warm")
+default :
+    print("Weather is moderate.")
+    
+}
+*/
 ***
 
 ## Question 8
@@ -373,4 +386,6 @@ b. Using a switch statement
 ```swift
 let myTuple: (Int, Int) = (5, 10)
 ```
+
+
 ***
