@@ -32,7 +32,7 @@ print("D")
 - B
 - C
 - D
-
+// answer: A, C, D
 ***
 ## Question 2
 
@@ -56,6 +56,7 @@ switch appInfo {
 - I'm not quite sure what you are looking at
 - It will give a compile-time error
 
+// answer: MyCoolApp hasn't released yet
 ***
 ## Question 3
 
@@ -79,7 +80,7 @@ default:
 - B
 - C
 - D
-
+// answer: D
 ***
 ## Question 4
 
@@ -103,6 +104,7 @@ case "snickers":
 - No default case in the switch statement
 - No print statement right outside the switch statement
 
+answer: No default case in the switch statement
 ***
 ## Question 5
 
@@ -113,7 +115,20 @@ let currentWeather = "rain"
 
 // enter code below
 ```
+/*
+let currentWeather = "rain"
 
+switch currentWeather {
+case "sunny" :
+ print("Have fun in the Sun 🌞")
+case  "snow" :
+ print("Snow Day, wear gloves")
+ case "rain" :
+ print("It's raining, bring an umbrella")
+default:
+ print("Wear what you want, who cares 🤷🏽‍♂️")
+}
+*/
 ***
 ## Question 6
 
@@ -123,7 +138,9 @@ Given the first name and last name of a Fellow, declare `fullName` variable and 
 let firstName = "John"
 let lastName = "Appleseed"
 
-// enter code below
+/* var fullName = firstName + lastName
+   var message = "the fellows full name is \(fullName)"
+    */
 ```
 
 ***
@@ -159,6 +176,16 @@ else {
  print("You lose!")
 }
 ```
+/*
+var x = 2
+
+if x == 2 {
+ print("You win!")
+}
+else if x == 3 {
+ print("You lose!")
+}
+*/
 ***
 
 ## Question 9
@@ -185,6 +212,29 @@ Output:
 Error
 
 ```
+var numberOfSides = 5
+
+switch numberOfSides  {
+case  3 :
+ print("Triangle")
+case 4 :
+ print("Square")
+ case 5 :
+ print("Pentagon")
+ case 6 :
+ print("Hexagon")
+ case 7 :
+ print("Heptagon")
+ case 8 :
+ print("Octagon")
+ case 9 :
+ print("Nonagon")
+ case 10 :
+ print("Decagon")
+default:
+ print("ERROR! Choose another number")
+}
+
 ***
 
 ## Question 10
@@ -200,6 +250,26 @@ Numeric Score 	Letter Grade
 65 - 69 	D
 Below 65 	F
 ```
+/*
+var grade = 55
+
+switch grade  {
+case  100 :
+    print("A+")
+case 90...99 :
+    print("A")
+case 80...89 :
+    print("B")
+case 70...79 :
+    print("C")
+case 65...69 :
+    print("D")
+case 0...64 :
+    print("F")
+default :
+    print("Enter grade again")
+}
+*/
 ***
 
 ## Question 11
@@ -216,6 +286,17 @@ if firstName == "Peter" {
 }
 let fullName = firstName + " " + lastName
 ```
+/*
+var firstName = "Phil"
+var lastName = "Gabriel"
+
+if firstName == "Peter" {
+    lastName = "Gabriel"
+} else if firstName == "Phil" {
+    lastName = "Collins"
+}
+let fullName = firstName + " " + lastName
+*/
 ***
 
 ## Question 12
@@ -250,13 +331,13 @@ default:
 ```
 What happens when you change number to:
 
--a. 365?
+-a. 365? DAYS IN YEAR
 
--b. 1024?
+-b. 1024? BYTES IN A KILOBYTE
 
--c. 65?
+-c. 65?  Some uninteresting number
 
-What happens when you remove the default clause?
+What happens when you remove the default clause? ERROR MESSAGE
 
 ***
 
